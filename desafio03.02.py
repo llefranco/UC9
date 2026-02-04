@@ -9,7 +9,6 @@ Utilizar a estrutura match case para simular um menu de atendimento onde o usuá
 
  
 📋 Enunciado:
- 
 
 Você foi contratado para criar um menu interativo de atendimento para uma empresa fictícia. O sistema deve exibir as opções abaixo e, de acordo com o número digitado, apresentar uma resposta:
 
