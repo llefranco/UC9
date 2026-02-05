@@ -52,9 +52,9 @@ experiencia = int(input("Quantos pontos de experiência você possui, aventureir
 
 
 if experiencia < 100: 
-    print ("Aventureiro Iniciante")
+    print ("Você é um aventureiro iniciante, então irá lutar contra o Lobo Faminto")
 elif  100 >= experiencia < 500:
-    print ("Aventureiro Intermediário")
+    print ("Hum... um aventureiro intermediário, você irá lutar contra o")
 else:
     print ("Aventureiro Veterano")
 
