@@ -52,19 +52,19 @@ experiencia = int(input("Quantos pontos de experiência você possui, aventureir
 
 
 if experiencia < 100: 
-    print ("Você é um aventureiro iniciante, então irá lutar contra o Lobo Faminto")
+    print ("Você é um aventureiro iniciante, então irá lutar contra o Lobo Faminto.")
 elif  100 >= experiencia < 500:
-    print ("Hum... um aventureiro intermediário, você irá lutar contra o")
+    print ("Hum... um aventureiro intermediário, você irá lutar contra o Leão!")
 else:
-    print ("Aventureiro Veterano")
+    print ("Que honra, um aventureiro veterano! Você irá lutar contra o ciclope.")
 
-print("Certo, lembre-se que na luta você pode Atacar (A), Defender (D) ou Fugir (F), boa sorte!")
+print("Certo, lembre-se que na batalha você pode Atacar (A), Defender (D) ou Fugir (F), boa sorte!")
 
 acao = input("Começou a luta! Qual será sua ação?: ")
 
 match acao:
     case "A":
-        print ("Você ataca o inimigo!")
+        print ("Você ataca o inimigo com sua espada!")
     case "D":
         print ("Você levanta seu escudo e entra em uma posição defensiva!")
     case "F":
