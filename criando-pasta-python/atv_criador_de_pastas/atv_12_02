@@ -1,0 +1,10 @@
+import os
+
+nome_pasta = input("Qual será o nome da pasta?: ")
+
+if os.path.exists(nome_pasta):
+  print("A pasta", nome_pasta, "já existe, insira outro nome.")
+
+else:
+  os.makedirs(nome_pasta)
+  print("Pasta", nome_pasta, "criada com sucesso!")
