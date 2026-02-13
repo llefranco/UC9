@@ -5,6 +5,10 @@ nome_pasta = input("Qual será o nome da pasta?: ")
 if os.path.exists(nome_pasta):
   print("A pasta", nome_pasta, "já existe, insira outro nome.")
 
+elif nome_pasta == "":
+  print("A pasta não pode ter um nome em branco.")
+
 else:
   os.makedirs(nome_pasta)
   print("Pasta", nome_pasta, "criada com sucesso!")
+
