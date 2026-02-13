@@ -1,14 +1,25 @@
 import os
 
-nome_pasta = input("Qual será o nome da pasta?: ")
+while True:
 
-if os.path.exists(nome_pasta):
-  print("A pasta", nome_pasta, "já existe, insira outro nome.")
+    nome_pasta = input("Qual será o nome da pasta?: ").lower()
 
-elif nome_pasta == "":
-  print("A pasta não pode ter um nome em branco.")
 
-else:
-  os.makedirs(nome_pasta)
-  print("Pasta", nome_pasta, "criada com sucesso!")
+    if os.path.exists(nome_pasta):
+     print("A pasta", nome_pasta, "já existe, insira outro nome.")
 
+    elif nome_pasta == "":
+     print("A pasta não pode ter um nome em branco.")
+
+    else:
+     os.makedirs(nome_pasta)
+     print("Pasta", nome_pasta, "criada com sucesso!")
+
+
+    user_choice = input("Gostaria de criar uma pasta nova? (s/n): ").lower()
+    if user_choice == 's':
+        print("Repetindo programa.")
+
+    elif user_choice == 'n':
+        print("Até mais!")
+        break
